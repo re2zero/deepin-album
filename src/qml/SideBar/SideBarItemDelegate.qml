@@ -11,6 +11,7 @@ import org.deepin.dtk.style 1.0 as DS
 
 ItemDelegate {
     id: item
+    Accessible.role: Accessible.ListItem
     MouseArea {
         anchors.fill: item
         acceptedButtons: Qt.RightButton | Qt.LeftButton
@@ -92,6 +93,8 @@ ItemDelegate {
     }
     // 移除设备按钮，仅在设备列表显示
     ActionButton {
+        Accessible.name: "RemoveDeviceButton"
+        Accessible.role: Accessible.Button
         visible: control.showRemoveDeviceBtn
         anchors {
             left: songName.right
@@ -174,3 +177,5 @@ ItemDelegate {
     Keys.onSpacePressed: (event)=> { event.accepted=false; }
     Keys.onReleased: (event)=> { event.accepted=(event.key===Qt.Key_Space); }
 }
+
+

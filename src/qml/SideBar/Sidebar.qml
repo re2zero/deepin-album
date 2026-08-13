@@ -324,6 +324,10 @@ ScrollView {
 
             // "添加相册"按钮
             action: FloatingButton {
+                    Accessible.name: "AddAlbumButton"
+
+                    Accessible.role: Accessible.Button
+
                 width: 21; height: 21
                 checked: false
                 palette: systemSideBar.palette
@@ -632,3 +636,4 @@ ScrollView {
         }
     }
 }
+

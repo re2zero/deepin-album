@@ -30,6 +30,8 @@ DialogWindow {
         }
 
         Button {
+            Accessible.name: "WarningOkButton"
+            Accessible.role: Accessible.Button
             Layout.alignment: Qt.AlignBottom | Qt.AlignHCenter
             Layout.bottomMargin: 10
             Layout.fillWidth: true
@@ -46,4 +48,5 @@ DialogWindow {
         setY(window.y  + window.height / 2 - height / 2)
     }
 }
+
 

@@ -12,6 +12,10 @@ import org.deepin.album 1.0 as Album
 import "./Utils"
 
 Menu {
+    Accessible.name: "ViewRightMenu"
+
+    Accessible.role: Accessible.Menu
+
     id: optionMenu
 
     // 处理拷贝快捷键冲突
@@ -380,3 +384,4 @@ Menu {
         }
     }
 }
+

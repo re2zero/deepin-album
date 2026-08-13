@@ -216,6 +216,8 @@ Item {
                 }
 
                 ActionButton {
+                    Accessible.name: "SlideShowPlayButton"
+                    Accessible.role: Accessible.Button
                     ToolTip.delay: 500
                     ToolTip.text: qsTr("Exit")
                     ToolTip.timeout: 5000
@@ -272,3 +274,4 @@ Item {
         }
     }
 }
+

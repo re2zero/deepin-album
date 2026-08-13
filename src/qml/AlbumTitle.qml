@@ -143,6 +143,8 @@ TitleBar {
         }
     }
     ActionButton {
+    Accessible.name: "AlbumIcon"
+    Accessible.role: Accessible.Button
         id: appTitleIcon
         anchors {
             top: parent.top
@@ -160,6 +162,8 @@ TitleBar {
     }
 
     ToolButton {
+    Accessible.name: "ToggleSidebarButton"
+    Accessible.role: Accessible.Button
         id: showHideleftSidebarButton
         anchors {
             top: parent.top
@@ -216,6 +220,8 @@ TitleBar {
             Layout.alignment: Qt.AlignLeft
             // 比例按钮
             ToolButton {
+    Accessible.name: "ZoomRatioButton"
+    Accessible.role: Accessible.Button
                 id: range1Button
                 Layout.preferredWidth: iconSize
                 Layout.preferredHeight: iconSize
@@ -262,6 +268,8 @@ TitleBar {
 
                 padding: 3
                 ToolButton {
+    Accessible.name: "YearViewButton"
+    Accessible.role: Accessible.Button
                     id:yButton
                     Layout.preferredHeight: parent.height
                     Layout.preferredWidth: parent.height
@@ -275,6 +283,8 @@ TitleBar {
                     }
                 }
                 ToolButton {
+    Accessible.name: "MonthViewButton"
+    Accessible.role: Accessible.Button
                     id:mButton
                     Layout.preferredHeight: parent.height
                     Layout.preferredWidth: parent.height
@@ -287,6 +297,8 @@ TitleBar {
                     }
                 }
                 ToolButton {
+    Accessible.name: "DayViewButton"
+    Accessible.role: Accessible.Button
                     id:dButton
                     Layout.preferredHeight: parent.height
                     Layout.preferredWidth: parent.height
@@ -299,6 +311,8 @@ TitleBar {
                     }
                 }
                 ToolButton {
+    Accessible.name: "AllCollectionViewButton"
+    Accessible.role: Accessible.Button
                     id:allButton
                     Layout.preferredHeight: parent.height
                     checkable: true
@@ -533,6 +547,8 @@ TitleBar {
             }
         }
         ToolButton {
+    Accessible.name: "FavoriteButton"
+    Accessible.role: Accessible.Button
             id: titleCollectionBtn
             property bool canFavorite: {
                 GStatus.bRefreshFavoriteIconFlag
@@ -568,6 +584,8 @@ TitleBar {
 
         ToolButton {
             id: titleRotateBtn
+    Accessible.name: "RotateButton"
+    Accessible.role: Accessible.Button
             visible: (titleImportBtn.visible ? false : true) && GStatus.currentViewType !== Album.Types.ViewDevice
             enabled: visible && FileControl.isRotatable(GStatus.selectedPaths)
             ColorSelector.disabled: visible && !FileControl.isRotatable(GStatus.selectedPaths)
@@ -588,6 +606,8 @@ TitleBar {
         }
         ToolButton {
             id: titleTrashBtn
+    Accessible.name: "DeleteButton"
+    Accessible.role: Accessible.Button
             visible: (titleImportBtn.visible ? false : true) && GStatus.currentViewType !== Album.Types.ViewDevice
             enabled: visible && FileControl.isCanDelete(GStatus.selectedPaths)
             ColorSelector.disabled: visible && !FileControl.isCanDelete(GStatus.selectedPaths)
@@ -624,3 +644,4 @@ TitleBar {
         }
     }
 }
+

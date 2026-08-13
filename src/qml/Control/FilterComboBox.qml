@@ -12,6 +12,8 @@ import org.deepin.dtk.style 1.0 as DS
 
 ComboBox {
     id: comboBox
+    Accessible.name: "FilterComboBox"
+    Accessible.role: Accessible.ComboBox
     textRole: "text"
     iconNameRole: "icon"
     flat: true
@@ -33,4 +35,5 @@ ComboBox {
         checked: comboBox.currentIndex === index
     }
 }
+
 

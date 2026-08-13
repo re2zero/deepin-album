@@ -68,6 +68,8 @@ DialogWindow {
             Layout.topMargin: 10
             Button {
                 text: qsTr("Cancel")
+                Accessible.name: "DeviceLoadCancelButton"
+                Accessible.role: Accessible.Button
                 Layout.preferredWidth: btnWidth
                 onClicked: {
                     deviceLoadDlg.visible = false
@@ -76,6 +78,8 @@ DialogWindow {
             }
             Button {
                 text: qsTr("Ignore")
+                Accessible.name: "DeviceLoadIgnoreButton"
+                Accessible.role: Accessible.Button
                 Layout.preferredWidth: btnWidth
                 Layout.alignment: Qt.AlignRight
 

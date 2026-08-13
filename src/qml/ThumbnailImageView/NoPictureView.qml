@@ -53,6 +53,8 @@ Item {
         RecommandButton {
             id: openPictureBtn
 
+            Accessible.name: "ImportPhotosButton"
+            Accessible.role: Accessible.Button
             Layout.alignment: Qt.AlignHCenter
             Layout.preferredWidth: 302
             Layout.preferredHeight: 36
@@ -70,3 +72,4 @@ Item {
         }
     }
 }
+

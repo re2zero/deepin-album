@@ -291,6 +291,8 @@ Item {
 
     // 退出按钮
     ToolButton {
+        Accessible.name: "NavigationCloseButton"
+        Accessible.role: Accessible.Button
         height: 22
         width: 22
         z: 100
@@ -358,3 +360,4 @@ Item {
         }
     }
 }
+
